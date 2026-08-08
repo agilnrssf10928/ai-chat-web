@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Chat - Ngobrol Bareng AI 🤖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💬 AI Chat</h1>
+            <p>Tanya apapun, AI akan jawab!</p>
+            <button class="clear-btn" onclick="clearChatHistory()">🗑️ Clear Chat</button>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="message ai">
+                <p>Halo! Aku AI, tanya apapun yang mau dibantu 😊</p>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Ketik pertanyaan kamu..."
+                onkeypress="handleKeyPress(event)"
+            >
+            <button onclick="sendMessage()">Kirim</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
